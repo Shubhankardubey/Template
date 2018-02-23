@@ -1,0 +1,16 @@
+WE make php scripting for login and signup in the main.php 
+Edit the connection.php file before installing the site
+or can read that one time
+create table named as
+
+users // name of the table
+    id - 255 primary key auto incriment
+    uname - varchar 255
+    pword -  varchar 255
+
+database default configuration
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname ='mmdb';
