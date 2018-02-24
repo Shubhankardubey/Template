@@ -74,9 +74,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li><a href="#contact" class="scroll">Contact</a></li>
 								<?php  
 									session_start();
-									if(isset($_SESSION['username']))
+									if(isset($_SESSION['fullname']))
 									{ ?>
-										<li><a href="index.php"><?php echo($_SESSION['username']);?> </a> </li>
+										<li><a href="index.php"><?php echo($_SESSION['fullname']);?> </a> </li>
 										<?php
 									}
 									else
