@@ -31,6 +31,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 	<!--//booststrap end-->
 
+	<!--css for drop down menu on the user name and login-->
+	<link href="css/namedropdown.css" rel="stylesheet">
+	<!--css for drop down menu on the user name and login-->
+	
 	<!-- font-awesome icons -->
 	<link href="css/font-awesome.css" rel="stylesheet">
 	<!-- //font-awesome icons -->
@@ -76,12 +80,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									session_start();
 									if(isset($_SESSION['fullname']))
 									{ ?>
-										<li><a href="index.php"><?php echo($_SESSION['fullname']);?> </a> </li>
+										
+										<li> <a href="index.php"> <div class="dropdown"> <?php echo($_SESSION['fullname']);?>
+									
+												<div class="dropdown-content">
+    												<a href="#">My Profile</a>
+   	 												<a href="logout.php">Log Out</a>
+  												</div>
+										</div>
+									
+									</a> </li>
 										<?php
 									}
 									else
 									{	?>
-										<li><a href="login/login.html">login/signup</a></li>
+											<li><a href="login/login.html">login/signup</a></li>	
 										<?php
 									}
 								?>
